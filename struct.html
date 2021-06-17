@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Responsive Web Design</title>
+    <title>Derek James Hernandez</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="reset.css" />
@@ -11,41 +11,81 @@
   </head>
   <body>
     <header>
-      <h1>Responsive Web Design</h1>
-      <p>Watch what happens to the navbar links when the screen hits 780px!</p>
+      <h1>Logo</h1>
+      <img src="Images/placeholder.png" alt= "Place holder" height="100px" width="100px" />
+
+      <nav>
+        <a id = "link_Me" href="#">1.About Me</a>
+        <a id = "link_Exp" href="#">2.Exp</a>
+        <a id = "link_Project" href="#">3.Projects</a>
+        <a id = "link_Contact" href="#">4.Contact</a>
+      </nav>
     </header>
-
-    <nav>
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-      <a href="#">Link 4</a>
-    </nav>
-
-    <main>
-      <aside>
-        <h2>This is a sidebar.</h2>
-        <div class="sample-img">Image</div>
-        <p>
-          It will stack BELOW the body once the screen hits 768px or smaller.
-        </p>
+    <div id = left_sidebar>
+      <aside orientation = "left" class = "sidebar_links">
+        <h2>It follows</h2>
+        <i class="fab fa-github"></i>
+        <a href="https://www.google.com/"><img src= "Images/placeholder.png" alt="HTML " style="width:42px;height:42px;"></a>
+        <a href="https://www.google.com/"><img src="Images/placeholder.png" alt="HTML " style="width:42px;height:42px;"></a>
+        <a href="https://www.google.com/"><img src="Images/placeholder.png" alt="HTML " style="width:42px;height:42px;"></a>
+        <a href="https://www.google.com/"><img src="Images/placeholder.png" alt="HTML " style="width:42px;height:42px;"></a>
       </aside>
+    </div>
+    <div id = right_sidebar>
+      <aside orientation = "right" class = "sidebar_email" >
+        <h2>It follows</h2>
+        <a href="mailto:hernandez.derek19@outlook.com">hernandez.derek19@outllook.com</a>
+      </aside>
+    </div>
+    <main>
+      <div id = "quick_intro">
 
-      <section>
-        <h2>This is the body.</h2>
-        <div class="sample-img">Image</div>
-        <p>
-          It will stack on top of the sidebar once the screen hits 768px or
-          smaller.
-        </p>
-      </section>
+        <!-- Who am I  -->
+        <h1 id = "WhoAmI_greeting"> Hello, </h1>
+        <h2 id = "WhoAmI_time">  <!-- Will have JS send the correct time of the day. Morning/Afternoon/Evening  --></h2>
+        <h3 id = "WhoAmI_Name"> Derek Hernandez</h3>
+        <h4 id = "WhoAmI_Idea">I enjoy learning new skills and utilizing them. 
+          Hence, I like to build things for computers</h4>
+        <p id = WhoAmI_Summery> I'm an Austin-based Software Engineer, that has a broad acadeimic expereicne ranging from Computer Security
+           to full stack development. Currently enrolled at Univeristy of Texas's coding bootcamp.
+            </p>
+      </div>
+
+      <div id =  "about_me">
+        <!-- Aboout Me  -->
+        <h1 id = "about_me_header">About Me</h1>
+
+        <p id = "about_me_first_summery">  </p>
+        <p id = "about_me_second_summery"> </p>
+
+        <h2 id = "about_me_recent_tech"> Recent tech</h2>
+        <ul class = "about_me_recent_skills">
+          <li>A</li>
+          <li>B</li>
+          <li>C</li>
+          <li>E</li>
+          <li>F</li>
+          <li>G</li>
+        </ul>
+      </div>
+
+      <div id =  "exp">
+        <!--  Expereience  -->
+      
+      </div>
+
+      <div id =  "contact_info">
+        <!-- Contact Me -->
+      
+      </div>
     </main>
-
     <footer>
       <h3>
-        Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
-        window!
+        Designed/Bult/Tested by Derek Hernandez
       </h3>
+      <h4>
+        GIT: HernandezDerekJ
+      </h4>
     </footer>
   </body>
 </html>
