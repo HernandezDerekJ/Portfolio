@@ -11,35 +11,38 @@
   </head>
   <body>
     <header>
-      <h1>Logo</h1>
-      <img src="Images/placeholder.png" alt= "Place holder" height="100px" width="100px" />
-
-      <nav>
-        <a id = "link_Me" href="#">1.About Me</a>
-        <a id = "link_Exp" href="#">2.Exp</a>
-        <a id = "link_Project" href="#">3.Projects</a>
+      <nav class = "nav_bar">
+        <img src="Images/placeholder.png" alt= "Place holder" height="100px" width="100px" />
+  
         <a id = "link_Contact" href="#">4.Contact</a>
+        <a id = "link_Project" href="#">3.Projects</a>
+        <a id = "link_Exp" href="#">2.Exp</a>
+        <a id = "link_Me" href="#">1.About Me</a>
+        
       </nav>
     </header>
-    <div id = left_sidebar>
+    <div class = left_sidebar>
       <aside orientation = "left" class = "sidebar_links">
-        <h2>It follows</h2>
         <i class="fab fa-github"></i>
-        <a href="https://www.google.com/"><img src= "Images/placeholder.png" alt="HTML " style="width:42px;height:42px;"></a>
-        <a href="https://www.google.com/"><img src="Images/placeholder.png" alt="HTML " style="width:42px;height:42px;"></a>
-        <a href="https://www.google.com/"><img src="Images/placeholder.png" alt="HTML " style="width:42px;height:42px;"></a>
-        <a href="https://www.google.com/"><img src="Images/placeholder.png" alt="HTML " style="width:42px;height:42px;"></a>
+        <ul>
+          <li>
+              <a href="https://www.google.com/"><img src= "Images/placeholder.png" alt="HTML " style="width:42px;height:42px;"></a>
+          </li>
+          <li>
+            <a href="https://www.google.com/"><img src= "Images/placeholder.png" alt="HTML " style="width:42px;height:42px;"></a>
+          </li>
+        </ul>
       </aside>
     </div>
-    <div id = right_sidebar>
+    <div class = right_sidebar>
       <aside orientation = "right" class = "sidebar_email" >
-        <h2>It follows</h2>
-        <a href="mailto:hernandez.derek19@outlook.com">hernandez.derek19@outllook.com</a>
+        <div>
+          <a href="mailto:hernandez.derek19@outlook.com">hernandez.derek19@outllook.com</a>
+        </div>
       </aside>
     </div>
     <main>
       <section id = "quick_intro">
-
         <!-- Who am I  -->
         <h1 id = "WhoAmI_greeting"> Hello, </h1>
         <h2 id = "WhoAmI_time">  <!-- Will have JS send the correct time of the day. Morning/Afternoon/Evening  --></h2>
