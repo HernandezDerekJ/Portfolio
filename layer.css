@@ -1,5 +1,6 @@
 :root {
   /* https://visme.co/blog/website-color-schemes/ #27 color scheme*/
+  /*--------------Colors---------------------*/
   --darkgreen: #61892f;
   --lightergreen: #86c232;
   --dark: #222629;
@@ -7,7 +8,24 @@
   --light: #6b6e70;
    /* extra*/
   --white: #fff;
-}
+  /*--------------Font Sizes---------------------*/
+  --extra-small: 12px;
+  --small: 14px;
+  --medium:17px;
+  --large:22px;
+  --extralarge:22px;
+
+   /*--------------VW Sizes---------------------*/
+   --extramall_vw: clamp(14px,1.5vw,30px);
+   --small_vw: clamp(15px,2vw,30px);
+   --bigger_small_vw: clamp(25px, 3.5vw, 45px);
+   --medium_vw: clamp(30px,4vw,60px);
+   --large_vw: clamp(45px,8vw,75px);
+
+   --decription_vw: clamp(40px, 50px, 60px)
+   --line_length: clamp(4vw,50vw,70vw);
+    /*--------------VW Sizes---------------------*/
+  }
 
 
 * {
@@ -23,12 +41,13 @@
   /*--------------- Header------------------ */
   header  {
     height: 50px;
-    color: var(--darkgreen);
+    color: var(--darkgreen); 
+    padding-bottom: 300px;
   }
   header img{
     float: left;
     height: 200px;
-    width:  250px;
+    width:  250px; 
   }
   header .nav_bar a{
     float: right;
@@ -39,17 +58,242 @@
     background: #13293d;
     color: var(--darkgreen);
   }
-  
 
-  /*----------------Header---------------------*/
+  /*-------------------Header------------------------*/
   /*----------------Main---------------------*/
   main {
-    display: flexbox;
     flex-wrap: wrap;
     padding: 15%;
   }
-  /*----------------Main---------------------*/
-  
+  main .space{
+    padding-bottom: 800px;
+  }
+  main .space_small{
+    padding-bottom: 200px;
+  }
+  main section{
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  /*-------------------Main------------------------*/
+  /*-------------------Top Intro------------------------*/
+  .quick_intro div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+   
+   }
+   /*---"Hello, I'm"---*/
+   .quick_intro div h2{
+    display: block;
+    font-size: var(--small_vw);
+   }
+   /*---"Derek Hernandez"---*/
+   .quick_intro div h3{
+   display: block;
+   font-size: var(--large_vw);
+   color: var(--lightergreen);
+  }
+  /*---"Aspire"---*/
+  .quick_intro div h4{
+   display: block;
+   font-size: var(--bigger_small_vw);
+   color: var(--light);
+   padding-bottom: 15px;
+  }
+  /*---"Aspire"---*/
+  .quick_intro div p{
+   display: block;
+   font-size: var(--small_vw);
+   color: var(--light);
+   padding-bottom: 10px;
+  }
+
+  .quick_intro a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 20px;
+    margin-top:30px;
+    margin-left:20px;
+    color:var(--light);
+    outline: 1px solid var(--lightergreen);
+  }
+  /*-------------------Top Intro------------------------*/
+  /*-------------------About Me------------------------*/
+  .section_one_about_me div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   /*---"About me"---*/
+   .section_one_about_me div h1{
+    display: flex;
+    position: absolute;
+    font-size: var(--medium_vw);
+    margin-bottom: 100px;
+    text-align: right;
+   }
+   /*---"Line"---*/
+   .section_one_about_me div h1::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 30px;
+    width: var(--line_length);
+    height: 1px;
+    margin-right: 10px;
+    background-color: var(--lightergreen);
+  }
+  /*---"Both p's"---*/
+  .section_one_about_me div p{
+    display: block;
+    font-size: var(--small_vw);
+    color: var(--light);
+    padding-bottom: 10px;
+   }
+   /*---"Entire List"---*/
+   .section_one_about_me div ul{
+    display: block;
+    font-size: var(--extramall_vw);
+    position: relative;
+    text-align: center;
+    columns: 2;
+    -webkit-columns: 2;
+    color: var(--light);
+    padding: 20px;
+   }
+   /*---"Entire List"---*/
+   .section_one_about_me div #about_me_recent_tech{
+    display: block;
+    font-size: var(--bigger_small_vw);
+    color: var(--lightergreen);
+    padding-left: 40px;
+   }
+   /*---"Entire List"---*/
+   .section_one_about_me div ul li{
+    display: block;
+    padding-left: 80px;
+    text-align: left;   
+    padding-bottom: 20px;
+   }
+   /*---"List Bullets"---*/
+   .section_one_about_me div ul li::before{
+    content: "-";
+    display: inline;
+    left: 0px;
+    color: var(--darkgreen);
+    font-size: var(--small_vw);
+    line-height: 12px;
+   }
+  /*-------------------About Me------------------------*/
+
+  /*-------------------Projects------------------------*/
+  #title{
+    display: block;
+    position: relative;
+    font-size: var(--medium_vw);
+    padding-bottom: 15px;
+    text-align: left;
+  }
+   /*---"Line"---*/
+  #title::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -30px;
+    width: var(--line_length);
+    height: 1px;
+    margin-left: 240px;
+    background-color: var(--lightergreen);
+  }
+ 
+  .section_three_projects .featured_projects .projects{
+    width: 110%;
+    display: grid;
+    position: relative;
+    justify-content: center;
+    padding-bottom: 200px;
+    align-items: center;
+    grid-template-columns: auto;
+   
+   }
+   .project_content h2{
+    height: 30%;
+    color: white;
+    text-align: center;
+  }
+  .project_content .featured_project_name{
+    display: block;
+    position: relative;
+    color: var(--lightergreen);
+    font-size: var(--small_vw);
+    text-align: right;
+    padding-bottom: 30px;
+  }
+  .project_content .featured_project_description{
+    display: block;
+    position: relative;
+    color: var(--light);
+    font-size: 30px;
+    text-align: right;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    left: 60%;
+    width: 45%;
+  }
+  .project_content .featured_project_skills{
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+
+  .project_content .featured_project_skills li{
+    display: inline;
+    position: relative;
+    list-style: none;
+    text-align: right;
+    left: 38%;
+    padding-right: 20px;
+    padding-top: 25px;
+    color: var(--lightergreen);
+    font-size: 20px;
+  }
+  /*-------------------Projects------------------------*/
+  /*-------------------Whats Next?------------------------*/
+  .section_four_contact_me h1{
+    display: block;
+    font-size: var(--medium_vw);
+    color: var(--lightergreen);
+  }
+  .section_four_contact_me h2{
+    display: block;
+    padding: 10px;
+    font-size: var(--small_vw);
+    color: var(--darkgreen);
+  }
+  .section_four_contact_me p{
+    display: block;
+    font-size: var(--small_vw);
+    padding-top: 5px;
+    color: var(--light);
+    padding-left: 15px;
+    text-align: left;
+  }
+  .section_four_contact_me a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 20px;
+    margin-top:30px;
+    margin-left:20px;
+    color:var(--light);
+    outline: 1px solid var(--lightergreen);
+  }
+  /*-------------------Whats Next?------------------------*/
+
   /*----------------Left Sidebard---------------------*/
   .left_sidebar aside {
     height: 50px;
@@ -101,10 +345,10 @@
   /*----------------Footer---------------------*/
  
   footer {
-    padding: 20px;
+    padding-bottom: 40px;
     text-align: center;
-    background: #13293d;
-    color: #fff;
+    background-color: var(--dark);
+    color: var(--darkgreen); 
   }
   /*----------------Footer---------------------*/
 

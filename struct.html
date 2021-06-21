@@ -20,6 +20,9 @@
         <a id = "link_Me" href="#">1.About Me</a>
         
       </nav>
+      <div id = "resume">
+        <a id = "link_Me" href="#">Resume</a>
+      </div>
     </header>
     <div class = left_sidebar>
       <aside orientation = "left" class = "sidebar_links">
@@ -42,113 +45,160 @@
       </aside>
     </div>
     <main>
-      <section id = "quick_intro">
+      <section class = "quick_intro">
         <!-- Who am I  -->
-        <h1 id = "WhoAmI_greeting"> Hello, </h1>
-        <h2 id = "WhoAmI_time">  <!-- Will have JS send the correct time of the day. Morning/Afternoon/Evening  --></h2>
-        <h3 id = "WhoAmI_Name"> Derek Hernandez</h3>
-        <h4 id = "WhoAmI_Idea">I enjoy learning new skills and utilizing them. 
-          Hence, I like to build things for computers</h4>
-        <p id = WhoAmI_Summery> I'm an Austin-based Software Engineer, that has a broad acadeimic expereicne ranging from Computer Security
-           to full stack development. Currently enrolled at Univeristy of Texas's coding bootcamp.
-            </p>
+        <div>
+          <h2 > Hello, I'm</h2>
+        </div>
+        <div>
+          <h3> Derek Hernandez</h3>
+        </div>
+        <div>
+          <h4>I'm an aspiring Engineer/Developer</h4>
+        </div>
+        <div>
+          <p>I enjoy learning new skills and utilizing them. 
+            Hence, I like to build things for computers</p>
+        </div>
+        <div>
+          <p id = WhoAmI_Summery> I'm an Austin-based aspiring Engineer, that has a broad acadeimic expereicne ranging from Computer Security
+            to full stack development. 
+        </div>
+        <div id = "contact_button">
+          <a id = "link_Me" href="#">Contact</a>
+        </div>
       </section>
 
-      <section id =  "about_me" class = "section_one_about_me">
+      <div class="space"> </div>
+
+      <section class = "section_one_about_me">
         <!-- Aboout Me  -->
-        <h1 id = "about_me_header">About Me</h1>
+        <div>
+          <h1 id = "about_me_header">About Me</h1>
+        </div>
 
-        <p id = "about_me_first_summery"> Hello, I'm Derek Hernandez an aspiring Engineer/Developer. 
-          My intrest in Engineering and Development has spanned from High School thought College.
-          Even after college I I continue to push my studies by enrolling in a bootcamp. 
-        </p>
-        <p id = "about_me_second_summery"> 
-          I graduated college from Texas State with a Bachelors in Computer Science and currrently entrolled in a Full-Stack Bootcamp at The University of Texas at Austin. 
-        </p>
-
-        <h2 id = "about_me_recent_tech"> Recent tech</h2>
-        <ul class = "about_me_recent_skills">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Java</li>
-          <li>Python</li>
-          <li>C++</li>
-        </ul>
+        <div>
+          <p id = "about_me_first_summery"> Hello, I'm Derek Hernandez an aspiring Engineer/Developer. 
+            My intrest in Engineering and Development has spanned from High School thought College.
+            Even after college I I continue to push my studies by enrolling in a bootcamp. 
+          </p>
+        </div>
+        <div>
+          <p id = "about_me_second_summery"> 
+          I graduated college from Texas State with a Bachelors in Computer Science and currrently 
+          entrolled in a Full-Stack Bootcamp at The University of Texas at Austin. 
+          </p>
+        </div>
+       
+        <div>
+          <h2 id = "about_me_recent_tech"> Recent tech</h2>
+        </div>
+        <div>
+          <ul class = "about_me_recent_skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+          </ul>
+        </div>
       </section>
-
-      <section id = "exp" class = "section_two_exp">
+      <div class="space"> </div>
+      <section class = "section_two_exp">
         <!--  Expereience  -->
       
       </section>
 
-      <section id =  "projects" class = "section_three_projects">
-        <!--  projects  -->
-        <section id = "featured_projects" class = "feature_projects_larger">
-          <li class = "first_feature_project" >
+      <section class = "section_three_projects">
+        <h1 id="title">Projects</h1>
+        <section class = "featured_projects">
+          <li id = "first_feature_project" class="projects" >
             <div class = "project_content">
               <p class = "feature_text"> Featured!</p>
-              <h1 class = "featured_project_name"> Portfolio</h1>
-              <div class = "featured_project_description"> Persional Portfolio</div>
-              <!--  Fix in CSS  -->
-              <u1 class = "featured_project_skills">
+              <h2 class = "featured_project_name"> Portfolio</h2>
+              
+              
+              <div class = "featured_project_links">
+                 <a href="https://www.google.com/"><img src= "Images/placeholder.png" alt="HTML " style="width:25px;height:25px;"></a>
+              </div>
+              <div class = "project_img">
+                <img src="Images/placeholder.png" alt= "Place holder" height="50px" width="80px" />
+              </div>
+              <p class = "featured_project_description">
+                A website useing the skills gained in University of Texas bootcamp.
+                The website will run through GIT pages and deisplay projects and skills.
+              </p>
+
+              <ul class = "featured_project_skills">
                 <li>Html</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
               </u1>
-              <!--  Little link to git hub with the image of git  -->
-              <div class = "featured_project_links">
-                <a href="https://www.google.com/"><img src= "Images/placeholder.png" alt="HTML " style="width:25px;height:25px;"></a>
-              </div>
-            </div>
-            <!--  project img or somthing picture of the topic Rover/folder/Pendulum  -->
-            <div class = "project_img">
-              <img src="Images/placeholder.png" alt= "Place holder" height="50px" width="80px" />
-            </div>
-          </li>
-          <li class = "second_feature_project" >
-            <div class = "project_content">
-              <p class = "feature_text"> Featured!</p>
-              <h1 class = "featured_project_name"> Rover</h1>
-              <div class = "featured_project_description"> Rover Challenge</div>
-              <!--  Fix in CSS  -->
-              <u1 class = "featured_project_skills">
-                <li>Python</li>
-                <li>Phesuo-Code</li>
-              </u1>
-              <!--  Little link to git hub with the image of git  -->
-              <div class = "featured_project_links">
-                <a href="https://www.google.com/"><img src= "Images/placeholder.png" alt="HTML " style="width:25px;height:25px;"></a>
-              </div>
-            </div>
-            <!--  project img or somthing picture of the topic Rover/folder/Pendulum  -->
-            <div class = "project_img">
-              <img src="Images/placeholder.png" alt= "Place holder" height="50px" width="80px" />
-            </div>
-          </li>
-          
-          <li class = "third_feature_project" >
-            <div class = "project_content">
-              <p class = "feature_text"> Featured!</p>
-              <h1 class = "featured_project_name"> Pendulum</h1>
-              <div class = "featured_project_description"> Pendulum Challenge</div>
-              <!--  Fix in CSS  -->
-              <u1 class = "featured_project_skills">
-                <li>Python</li>
-                <li>Data Structers</li>
-              </u1>
-              <!--  Little link to git hub with the image of git  -->
-              <div class = "featured_project_links">
-                <a href="https://www.google.com/"><img src= "Images/placeholder.png" alt="HTML " style="width:25px;height:25px;"></a>
-              </div>
-            </div>
-            <!--  project img or somthing picture of the topic Rover/folder/Pendulum  -->
-            <div class = "project_img">
-              <img src="Images/placeholder.png" alt= "Place holder" height="50px" width="80px" />
-            </div>
-          </li>
 
-        <!--  Smaller projects  -->    
+              
+            </div>
+            <!--  project img or somthing picture of the topic Rover/folder/Pendulum  -->
+            
+          </li>
+          <li id = "second_feature_project" class="projects" >
+            <div class = "project_content">
+              <p class = "feature_text"> Featured!</p>
+              <h2 class = "featured_project_name"> Mars Rover</h2>
+              
+              
+
+              <div class = "featured_project_links">
+                <a href="https://www.google.com/"><img src= "Images/placeholder.png" alt="HTML " style="width:25px;height:25px;"></a>
+              </div>
+
+              <p class = "featured_project_description">
+                A challenge used in interviews. The goal is to take an input file, containing directions and polar 
+                cordinates and navigate a plane. 
+                Inputs are parsed and our rover will navigate terrain and store 
+                each location of rover.
+              </p>
+
+              <ul class = "featured_project_skills">
+                <li>Python 2</li>
+                <li>Data Structures</li>
+                <li>Collaboration</li>
+              </u1>
+            </div>
+            <!--  project img or somthing picture of the topic Rover/folder/Pendulum  -->
+            <div class = "project_img">
+              <img src="Images/placeholder.png" alt= "Place holder" height="50px" width="80px" />
+            </div>
+          </li>
+          <li id = "third_feature_project" class="projects" >
+            <div class = "project_content">
+              <p class = "feature_text"> Featured!</p>
+              <h2 class = "featured_project_name"> Pendulum</h2>
+              
+              
+
+              <div class = "featured_project_links">
+                <a href="https://www.google.com/"><img src= "Images/placeholder.png" alt="HTML " style="width:25px;height:25px;"></a>
+              </div>
+
+              <p class = "featured_project_description">
+                A common interview question. The goal is to parse through a ordered list and place the correct
+                values in a pendulum order (lowest in the middle, next highest to the right, then left). 
+                The goal was to get the Big O Notation as low as possible. 
+              </p>
+
+              <ul class = "featured_project_skills">
+                <li>Python 3</li>
+                <li>Data Structures</li>
+                <li>Big O Notation</li>
+              </u1>
+            </div>
+            <!--  project img or somthing picture of the topic Rover/folder/Pendulum  -->
+            <div class = "project_img">
+              <img src="Images/placeholder.png" alt= "Place holder" height="50px" width="80px" />
+            </div>
+          </li>
+        <!--  Smaller projects    
         </section>
         <section id = "older_projects" class = "older_projects_small">
           <h2>
@@ -159,20 +209,21 @@
             <li class = "grid_projects">
             </li>
           </ul>
-
-
         </section>
-
       </section>
+       --> 
+      <div class="space"> </div>
 
       <section id = "contact_info" class = "section_four_contact_me">
         <!-- Contact Me -->
         <h1 id = "small_num_header"> Whats Next?</h1>
         <h2 id = "large_header"> How to get in touch?</h2>
-        <p> I am activley seeking new oppertunities, such as freelance or open positions. The best way to get in touch with me is by email. 
+        <p> I am activley seeking new oppertunities, such as freelance or open positions.
+          The best way to get in touch with me is by email. 
           Feel free to email reguarding oppertunies, questions or critiques. </p>
         <a class = "email_button" href= "mailto:hernandez.derek19@outlook.com" rel = "noopener noreferrer" target= "_blank">Email</a>
       </section>
+      <div class="space_small"> </div>
     </main>
     <footer>
       <h3 id = "footer_sign">
