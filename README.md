@@ -1,1 +1,1 @@
-# Portfolio
+Personal Portfolio, built from scratch
