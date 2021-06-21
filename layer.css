@@ -42,7 +42,7 @@
   header  {
     height: 50px;
     color: var(--darkgreen); 
-    padding-bottom: 300px;
+    padding-bottom: 400px;
   }
   header img{
     float: left;
@@ -51,12 +51,13 @@
   }
   header .nav_bar a{
     float: right;
+    text-decoration: none;
+    font-size: 1vw;
     margin-left: 0%;
-    margin-right: 8%;
+    margin-right: 5%;
     margin-top:6%;
     margin-bottom: 0%;
-    background: #13293d;
-    color: var(--darkgreen);
+    color: var(--lightergreen);
   }
 
   /*-------------------Header------------------------*/
@@ -66,10 +67,10 @@
     padding: 15%;
   }
   main .space{
-    padding-bottom: 800px;
+    padding-bottom: 900px;
   }
   main .space_small{
-    padding-bottom: 200px;
+    padding-bottom: 300px;
   }
   main section{
     margin-left: 150px;
@@ -127,6 +128,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 70px;
    }
    /*---"About me"---*/
    .section_one_about_me div h1{
@@ -134,7 +136,7 @@
     position: absolute;
     font-size: var(--medium_vw);
     margin-bottom: 100px;
-    text-align: right;
+    text-align: left;
    }
    /*---"Line"---*/
    .section_one_about_me div h1::before {
@@ -142,7 +144,7 @@
     display: block;
     position: relative;
     top: 30px;
-    width: var(--line_length);
+    width: clamp(100px, 700px, 900px);
     height: 1px;
     margin-right: 10px;
     background-color: var(--lightergreen);
@@ -234,28 +236,31 @@
     padding-bottom: 30px;
   }
   .project_content .featured_project_description{
-    display: block;
+    display: inline-block;
+    word-wrap: normal;
     position: relative;
     color: var(--light);
+    padding-top: 40px;
+    padding-left: 40px;
     font-size: 30px;
     text-align: right;
-    padding-bottom: 30px;
-    padding-top: 30px;
     left: 60%;
     width: 45%;
   }
   .project_content .featured_project_skills{
-    display: block;
+    display: flex;
+    word-wrap: normal;
     position: relative;
-    text-align: center;
+    margin-right: auto;
+    float: right;
   }
 
   .project_content .featured_project_skills li{
-    display: inline;
+    display: inline-block;
+    word-wrap: normal;
     position: relative;
     list-style: none;
     text-align: right;
-    left: 38%;
     padding-right: 20px;
     padding-top: 25px;
     color: var(--lightergreen);
@@ -264,23 +269,26 @@
   /*-------------------Projects------------------------*/
   /*-------------------Whats Next?------------------------*/
   .section_four_contact_me h1{
-    display: block;
+    display: inline-block;
+    word-wrap: normal;
     font-size: var(--medium_vw);
     color: var(--lightergreen);
   }
   .section_four_contact_me h2{
-    display: block;
+    display: inline-block;
+    word-wrap: normal;
     padding: 10px;
     font-size: var(--small_vw);
     color: var(--darkgreen);
   }
   .section_four_contact_me p{
-    display: block;
+    display: inline-block;
     font-size: var(--small_vw);
-    padding-top: 5px;
     color: var(--light);
-    padding-left: 15px;
-    text-align: left;
+    word-wrap: normal;
+
+    padding-left: 20px;
+    padding-top: 25px;
   }
   .section_four_contact_me a{
     display: inline-block;
@@ -345,7 +353,7 @@
   /*----------------Footer---------------------*/
  
   footer {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     text-align: center;
     background-color: var(--dark);
     color: var(--darkgreen); 
