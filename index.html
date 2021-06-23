@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/48bfc92b05.js" crossorigin="anonymous"></script>
     <script src="myscripts.js"></script>
     <link rel="stylesheet" type="text/css" href="layer.css" />
 
@@ -17,10 +18,10 @@
       <nav class = "nav_bar">
         <img src="Images/placeholder.png" alt= "Place holder" height="100px" width="100px" />
   
-        <a id = "link_Contact" href="#contact_info">4) Contact</a>
-        <a id = "link_Project" href="#project_section">3) Projects</a>
-        <a id = "link_Exp" href="#">2) Exp</a>
-        <a id = "link_Me" href="#about_me_section">1) About Me</a>
+        <a id = "link_Contact" href="assests/Derek_James_Hernandez.pdf" target="_blank">4) Resume</a>
+        <a id = "link_Project" href="#contact_info">4) Contact</a>
+        <a id = "link_Project" href="#project_section">2) Projects</a>
+        <a id = "link_Me" href="#about_me_header">1) About Me</a>
         
       </nav>
       
@@ -29,15 +30,15 @@
       <aside orientation = "left" class = "sidebar_links">
         <ul>
           <li>
-            <a id = "resume" href="https://www.linkedin.com/in/derekhernandez19/" target="_blank"><i class="fa fa-linkedin" style="font-size: 48px"></i></a>
+            <a href="https://www.linkedin.com/in/derekhernandez19/" target="_blank"><i class="fa fa-linkedin" style="font-size: 48px"></i></a>
            
           </li>
           <li>
-            <a id = "resume" href="https://github.com/HernandezDerekJ" target="_blank"> <i class="fa fa-github" style="font-size:48px"></i></a>
+            <a href="https://github.com/HernandezDerekJ" target="_blank"> <i class="fa fa-github" style="font-size:48px"></i></a>
           </li>
           <li>
             
-            <a id = "resume" href="assests/Derek_James_Hernandez.pdf" target="_blank"> <i class="fa fa-file-text" style="font-size:48px"></i></a>
+            <a href="assests/Derek_James_Hernandez.pdf" target="_blank"> <i class="fa fa-file-text" style="font-size:48px"></i></a>
           </li>
         </ul>
       </aside>
@@ -75,6 +76,7 @@
       </section>
 
       <div class="space"> </div>
+      <div class="above_about_me"> </div>
 
       <section id = "about_me_section"class = "section_one_about_me">
         <!-- Aboout Me  -->
@@ -124,17 +126,14 @@
               <h2 class = "featured_project_name"> Portfolio</h2>
               
               
-              <div class = "featured_project_links">
-                 <a href="https://www.google.com/"><img src= "Images/placeholder.png" alt="HTML " style="width:25px;height:25px;"></a>
+              <div>
+                <i id="icon" class="fa fa-user-circle-o" style="font-size:150px"></i>
               </div>
               
               <p class = "featured_project_description">
-                A website useing the skills gained in University of Texas bootcamp.
+                A website useing the skills gained in University of Texas bootcamp.<br>
                 The website will run through GIT pages and deisplay projects and skills.
               </p>
-
-              <div></div>
-
 
               <ul class = "featured_project_skills">
                 <li>Html</li>
@@ -145,21 +144,17 @@
               <div></div>
               
             </div>
-            <div class = "project_img">
-              <a class="git_logo" href="https://github.com/HernandezDerekJ" target="_blank"> <i class="fa fa-github" style="font-size:32px"></i></a>
-            </div>
-            <!--  project img or somthing picture of the topic Rover/folder/Pendulum  -->
-            
+            <div class = "git_logo">
+              <a href="https://github.com/HernandezDerekJ/Portfolio" target="_blank"> <i class="fa fa-github" style="font-size:32px"></i></a>
+            </div>            
           </li>
           <li id = "second_feature_project" class="projects" >
             <div class = "project_content">
               <p class = "feature_text"> Featured!</p>
               <h2 class = "featured_project_name"> Mars Rover</h2>
-              
-              
 
-              <div class = "featured_project_links">
-                <a href="https://www.google.com/"><img src= "Images/placeholder.png" alt="HTML " style="width:25px;height:25px;"></a>
+              <div>
+                <i id="icon" class="fas fa-satellite" style="font-size:150px"></i>
               </div>
 
               <p class = "featured_project_description">
@@ -176,20 +171,18 @@
                 <li>Collaboration</li>
               </u1>
             </div>
-            <!--  project img or somthing picture of the topic Rover/folder/Pendulum  -->
-            <div class = "project_img">
-              <a class="git_logo" href="https://github.com/HernandezDerekJ" target="_blank"> <i class="fa fa-github" style="font-size:32px"></i></a>
+            <div></div>
+            <div class = "git_logo">
+              <a href="https://github.com/HernandezDerekJ/MarsRoverChallenge" target="_blank"> <i class="fa fa-github" style="font-size:32px"></i></a>
             </div>
           </li>
           <li id = "third_feature_project" class="projects" >
             <div class = "project_content">
               <p class = "feature_text"> Featured!</p>
               <h2 class = "featured_project_name"> Pendulum</h2>
-              
-              
 
-              <div class = "featured_project_links">
-                <a href="https://www.google.com/"><img src= "Images/placeholder.png" alt="HTML " style="width:25px;height:25px;"></a>
+              <div>
+                <i id ="icon" class="fas fa-hourglass-half" style="font-size:150px"></i>
               </div>
 
               <p class = "featured_project_description">
@@ -200,7 +193,6 @@
 
               <div></div>
 
-
               <ul class = "featured_project_skills">
                 <li>Python 3</li>
                 <li>Data Structures</li>
@@ -208,8 +200,8 @@
               </u1>
             </div>
             <!--  project img or somthing picture of the topic Rover/folder/Pendulum  -->
-            <div class = "project_img">
-              <a class="git_logo" href="https://github.com/HernandezDerekJ" target="_blank"> <i class="fa fa-github" style="font-size:32px"></i></a>
+            <div class = "git_logo">
+              <a href="https://github.com/HernandezDerekJ/Pendulum-Sort" target="_blank"> <i class="fa fa-github" style="font-size:32px"></i></a>
             </div>
           </li>
         <!--  Smaller projects    
@@ -233,9 +225,9 @@
         <h1 id = "small_num_header"> Whats Next?</h1>
         <div></div>
         <h2 id = "large_header"> How to get in touch?</h2>
-        <p> I am activley seeking new oppertunities, such as freelance or open positions.
-          The best way to get in touch with me is by email. 
-          Feel free to email reguarding oppertunies, questions or critiques. </p>
+        <p> I am activley seeking new oppertunities, such as freelance or open positions.<br>
+          The best way to get in touch with me is by email. <br>
+          Feel free to email reguarding opportunities, questions or critiques. <br></p>
         <a class = "email_button" href= "mailto:hernandez.derek19@outlook.com" rel = "noopener noreferrer" target= "_blank">Email</a>
       </section>
       <div class="space_small"> </div>
