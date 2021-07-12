@@ -261,7 +261,7 @@
     color: var(--lightergreen);
     font-size: 20px;
   }
-  .section_three_projects #icon{
+  .section_three_projects #icon, #sceenshot{
     margin-right: 1px;
     position: relative;
     top: 100px;
